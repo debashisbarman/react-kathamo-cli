@@ -1,6 +1,6 @@
 {
   "name": "react-kathamo-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minimal setup for performance orientated, offline–first React.js applications.",
   "author": "Debashis Barman <hello@debashisbarman.in> (http://www.debashisbarman.in)",
   "license": "MIT",
