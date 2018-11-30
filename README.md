@@ -4,7 +4,7 @@ Minimal setup for performance orientated, offline–first React.js applications.
 
 ## Installation
 
-`npm install react-kathamo-cli`
+`npm i -g react-kathamo-cli`
 
 ## How to use
 
