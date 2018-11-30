@@ -44,7 +44,6 @@ download(
   },
   (err) => {
     if (err) {
-      console.log(err);
       console.error(chalk.red(`Unable to create ${projectName} in ${projectPath}.`));
       process.exit(1);
     }
