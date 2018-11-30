@@ -4,6 +4,10 @@
   "description": "Minimal setup for performance orientated, offline–first React.js applications.",
   "author": "Debashis Barman <hello@debashisbarman.in> (http://www.debashisbarman.in)",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "boilerplate"
+  ],
   "bin": {
     "react-kathamo": "./index.js"
   },
@@ -22,9 +26,12 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
   },
-  "repository": "https://github.com/debashisbarman/react-kathamo-cli",
-  "keywords": [
-    "react",
-    "boilerplate"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debashisbarman/react-kathamo-cli"
+  },
+  "homepage": "https://github.com/debashisbarman/react-kathamo-cli#readme",
+  "bugs": {
+    "url": "https://github.com/debashisbarman/react-kathamo-cli/issues"
+  }
 }
