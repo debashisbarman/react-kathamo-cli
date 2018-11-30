@@ -23,7 +23,15 @@ if (major < 8) {
 const projectName = process.argv.slice(2, 3)[0];
 
 if (!projectName) {
-  console.error(chalk.red('Missing project directory name.'));
+  console.error('Please specify the project directory:');
+  console.log(`\n  ${chalk.green('react-kathamo')} <project-name>\n`);
+  process.exit(1);
+}
+
+if (!/^([A-Za-z-_\d])+$/.test(projectName)) {
+  console.error(
+    chalk.red('Project name may only include letters, numbers, underscores and dashes.'),
+  );
   process.exit(1);
 }
 
@@ -53,7 +61,9 @@ download(
     exec(`cd ${projectPath} && npm install`, (err) => {
       if (err) {
         console.log(
-          chalk.red('Unable to install project dependencies.\nPlease install them manually.'),
+          `${chalk.red(
+            '\nUnable to install project dependencies.\n\nPlease install manually:',
+          )}\n\n  ${chalk.cyan('cd')} ${projectName}\n${chalk.cyan('  npm install')}`,
         );
         process.exit(1);
       }
